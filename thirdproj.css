@@ -1,0 +1,703 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.nav{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav img{
+    height: 30px;
+    margin-left: 100px;
+}
+.nav p{
+    font-size: 20px;
+    font-weight: 800;
+    font-family: 'Roboto', sans-serif;
+    margin-right: 100px;
+}
+.first_page{
+    width: 100%;
+    height: 155vh;
+    background-color: gainsboro;
+    position: relative;
+}
+.first_page .bg-shape{
+    width: 215px;
+    height: 143vh;
+    background-color: orangered;
+    margin-left: 180px;
+    animation: boxrotate 1s linear 1;
+    animation-delay: .6s;
+    visibility: hidden;
+    animation-fill-mode: forwards;
+    
+}
+@keyframes boxrotate{
+    100%{
+        transform: rotate(-180deg);
+        visibility:visible;
+    }
+}
+.first_page .groupimage img{
+    width: 1004px;
+    height: 680px;
+    position: absolute;
+    top: 80px;
+    left: 250px;
+    animation: moveimage 1s linear 1;
+    visibility: hidden;
+    /* animation-delay: 1s; */
+    animation-fill-mode: forwards;
+    animation-duration: .6s;
+}
+@keyframes moveimage{
+    0%{
+        transform: translateX(300px);
+        visibility: visible;
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        visibility: visible;
+        opacity: 1;
+    }
+}
+.first_page .box1{
+    width: 500px;
+    height: 380px;
+    background-color: black;
+    position: absolute;
+    top: 280px;
+    left: 125px;
+    animation:  box 1s linear 1;
+    visibility: hidden;
+    /* animation-delay: 1s; */
+    animation-fill-mode: forwards;
+    animation-duration: .6s;
+}
+@keyframes box {
+    0%{
+        transform: translateX(-300px);
+        visibility: visible;
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        visibility: visible;
+        opacity: 1;
+    }
+}
+.first_page .box1 .box1content{
+    color: white;
+    margin: 50px 0px 30px 40px;
+}
+.first_page .box1 .box1content h3{
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    letter-spacing: 2px;
+}
+.first_page .box1 .box1content h1{
+    font-family: 'Oswald', sans-serif;
+    /* font-family: sans-serif; */
+    /* font-weight: bold; */
+    font-size: 65px;
+    margin-top: 30px;
+}
+.box2container{
+    display: flex;
+    width: 873px;
+    height: 220px;
+    /* background-color: white; */
+    position: absolute;
+    bottom: 150px;
+    left: 320px;
+    justify-content: space-between;
+
+}
+.box2container .container{
+    width: 420px;
+    height: 220px;
+    background-color: white;
+    position: relative;
+    z-index: 1;
+    border: 1px white;
+    /* border: 10px solid rgba(0, 0, 0, .4); */
+    box-shadow: 5px 5px grey;
+    
+
+}
+.box2container .container .box2content{
+    display: flex;
+}
+.box2container .container .box2content .content{
+    margin: 60px 30px 30px 0;
+}
+.box2container .container .box2content .content h3{
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: bolder;
+}
+.box2container .container .box2content .content p{
+    /* font-family: 'Roboto', sans-serif ; */
+    font-family: sans-serif;
+    line-height: 1.6em;
+    margin-top: 20px;
+}
+.fa-3x{
+    color: white;
+    margin: 50px 
+}
+.iconbg{
+    width: 80px;
+    height: 80px;
+    background-color: orangered;
+    margin-left: 30px;
+    margin-top: 50px;
+    position: absolute;
+    z-index: -1;
+    border-radius: 50%;
+}
+.second_page{
+    width: 100%;
+    height: 280vh;
+}
+.second_page .cardcontainer{
+    width: 1140px;
+    height: 492px;
+    /* background-color: aquamarine; */
+    align-items: center;
+    margin: 70px auto;
+    display: flex;
+    justify-content: space-between;
+}
+.second_page .cardcontainer .cardbox{
+    height: 100%;
+    width: 360px;
+    background-color: white;
+    border: 3px solid orangered;
+    box-shadow: 5px 5px rgb(139, 138, 138);
+    animation: cards 1s linear 1;
+    visibility: hidden;
+    /* animation-delay: 1s; */
+    animation-fill-mode: forwards;
+    animation-duration: 1.6s;
+}
+@keyframes cards{
+    0%{
+        /* transform: translateX(300px); */
+        visibility: visible;
+        opacity: 0;
+    }
+    100%{
+        /* transform: translateX(0); */
+        visibility: visible;
+        opacity: 1;
+    }
+}
+.second_page .cardcontainer .cardbox .cardcontent{
+    margin: 40px 30px;
+}
+.second_page .cardcontainer .cardbox .cardcontent .number{
+    font-size: 48px;
+    /* font-weight: ; */
+    /* font-family:'Roboto', sans-serif ; */
+    font-family: 'Oswald', sans-serif;
+    color: grey;
+    margin-bottom: 30px;
+}
+.second_page .cardcontainer .cardbox .cardcontent h2{
+    font-size: 36px;
+    font-weight: 700;
+    color: rgb(59, 57, 57);
+    /* font-family:'Roboto', sans-serif ; */
+    font-family: 'Oswald', sans-serif;
+    line-height: 37px;
+    margin-bottom: 40px;
+}
+.second_page .cardcontainer .cardbox .cardcontent .para{
+    font-family: 'Roboto', sans-serif ;
+    font-weight: bolder;
+    line-height: 1.6em;
+    color: rgb(85, 83, 83);
+    margin-bottom: 40px;
+}
+.second_page .cardcontainer .cardbox .cardcontent button{
+    padding: 22px 30px;
+    color: white;
+    font-size: 18px;
+    background-color: orangered;
+    border-style: none;
+}
+.second_page .cardcontainer .cardbox .cardcontent button:hover{
+    background-color: grey;
+}
+.second_page .imagecontent{
+    width: 100%;
+    height: 200vh;
+    position: relative;
+}
+.second_page .imagecontent .centerimage{
+    margin: 280px 0 0 200px;
+    border-radius: 50%;
+    /* align-items: center;
+    margin: auto; */ 
+}
+.second_page .imagecontent .imagebox{
+    width: 600px;
+    height: 375px;
+    background-color: white;
+    position: absolute;
+    top: 80px;
+    left: 110px;
+    border: 2px solid orangered;
+    box-shadow: 5px 5px rgb(199, 196, 196);
+}
+.second_page .imagecontent .imagebox .imageboxcontent{
+    margin: 40px;
+}
+.second_page .imagecontent .imagebox .imageboxcontent h2{
+    font-size: 48px;
+    font-family: 'Oswald', sans-serif ;
+    margin-bottom: 30px;
+}
+.second_page .imagecontent .imagebox .imageboxcontent p{
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif  ;
+    line-height: 1.6em;
+    font-weight: 600;
+    margin-bottom: 60px;
+    margin-right: 50px;
+}
+.second_page .imagecontent .imagebox .imageboxcontent button{
+    padding: 18px 30px;
+    background-color: orangered;
+    border-style: none;
+    color: white;
+    font-size: 18px;
+}
+.second_page .imagecontent .counterContainer{
+    width: 560px;
+    height: 470px;
+    /* background-color: aquamarine; */
+    position: absolute;
+    bottom: 80px;
+    right: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    column-gap: 20px;
+}
+.second_page .imagecontent .counterContainer .counter{
+    width: 270px;
+    height: 210px;
+    background-color: orangered;
+}
+.second_page .imagecontent .counterContainer .counter h4{
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+}
+.second_page .imagecontent .counterContainer .counter p{
+    color: rgb(255, 255, 255);
+
+font-family: "Open Sans", sans-serif;
+font-size: 60px;
+font-weight: 300;
+line-height :60px;
+text-align: center;
+margin-top: 20px;
+}
+
+.third_page{
+    width: 100%;
+    height: 160vh;
+    background-color: gainsboro;
+    position: relative;
+}
+ .bg-box{
+    width: 935px;
+    height: 385px;
+    background-color: orangered;
+    position: absolute;
+    top: 320px;
+    right: 120px;
+    
+}
+.bg-circle{
+    width: 250px;
+    height: 250px;
+    background-color: orangered;
+    border-radius: 50%;
+    position: absolute;
+    top: 70px;
+    left: 90px;
+
+}
+.listcontainer{
+    width: 986px;
+    height: 310px;
+    position: absolute;
+    top: 150px;
+    left: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+.listcontainer .listbox{
+    width: 312px;
+    height: 310px;
+    background-color: white;
+    border: 1px solid white;
+    box-shadow: 10px 10px rgb(199, 196, 196);
+
+}
+.listcontainer .listbox h4{
+    font-size: 24px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    line-height: 28.8px;
+    margin: 30px 0 35px 25px;
+
+}
+.listcontainer .listbox li{
+    margin-left: 40px;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif  ;
+    line-height: 40px;
+    list-style: none;
+    font-weight: bold;  
+}
+.third_page .blueshirtimage img{
+    position: absolute;
+    border-radius: 50%;
+    bottom: 80px;
+    left: 100px;
+}
+.third_page .what-to-do-box{
+    width: 480px;
+    height: 365px;
+    background-color: white;
+    position: absolute;
+    bottom: 160px;
+    right: 165px;
+    border: 1px solid white;
+    box-shadow: 10px 10px rgb(199, 196, 196);
+}
+.third_page .what-to-do-box .circleshape{
+    width: 70px;
+    height: 70px;
+    background-color:orangered;
+    border-radius: 50%;
+    margin-top: 80px;
+    margin-left: 50px;
+}
+.third_page .what-to-do-box h2{
+    font-family: 'Oswald', sans-serif ;
+    font-weight: 400;
+    font-size: 60px;
+    margin-left: 50px;
+    margin-top: 10px;
+}
+.third_page .what-to-do-box h4{
+    font-size: 24px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    letter-spacing: 3px;
+    margin-left: 50px;
+    margin-top: 10px;
+}
+.fourth_page .bg-image{
+    background-image: url("3rd project images/images/dfff-min.jpg");
+    width: 100%;
+    height: 700px;
+    position: relative;
+}
+.fourth_page .bg-image .slidecontainer{
+    width: 470px;
+    height: 530px;
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+    left: 150px;
+    display: flex;
+    /* align-items: center; */
+    /* justify-content: center; */
+    flex-direction: column;
+
+}
+/* .fourth_page .bg-image .slidecontainer .content{
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+} */
+.fourth_page .bg-image .slidecontainer img{
+    border-radius: 50%;
+    margin: 40px 200px;
+}
+.fourth_page .bg-image .slidecontainer p{
+    text-align: center;
+    margin: 0 80px;
+    font-size: 17px;
+    font-family:'Roboto', sans-serif  ;
+    font-weight: 600;
+    line-height: 28px;
+}
+.fourth_page .bg-image .slidecontainer h5{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    font-family:  'Oswald', sans-serif ;
+    margin-top: 80px;
+}
+.fourth_page .bg-image .slidecontainer h6{
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    font-family:  'Oswald', sans-serif ;
+    margin-top: 10px;
+
+}
+.slidecontent{
+    position: relative;
+}
+.fa-chevron-left{
+    position: absolute;
+    bottom:150px;
+    left: 10px;
+}
+.fa-chevron-right{
+    position: absolute;
+    bottom: 150px;
+    right: 10px;
+}
+.fifth_page{
+    width: 100%;
+    height:150vh;
+    background-color: ghostwhite;
+}
+.fifth_page  h2{
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 53px;
+    width: 870px;
+    font-family: 'Oswald', sans-serif;
+    margin-left: 70px;
+    /* margin-top: 70px; */
+    padding-top: 70px;
+}
+.fifth_page .container2{
+    width: 1140px;
+    height: 700px;
+    /* background-color: aqua; */
+    align-items: center;
+    margin:70px auto;
+    display: flex;
+    /* flex-wrap: wrap; */
+}
+.fifth_page .container2 .left{
+    width: 50%;
+    height: 100%;
+    /* background-color: blueviolet; */
+    display: flex;
+    flex-wrap: wrap;
+}
+.fifth_page .container2 .left .image1 img{
+    border-radius: 50%;
+    margin-right: 100px;
+}
+.fifth_page .container2 .left .leftcontentbox{
+    width: 50%;
+    height: 260px;
+    background-color: orangered;
+}
+.fifth_page .container2 .left .image2 img{
+    border-radius: 50%;
+    margin-left: 100px;
+    margin-top: 30px;
+}
+.fifth_page .container2 .left .leftcontentbox h4{
+    font-size: 24px;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    margin: 25px;
+}
+.fifth_page .container2 .left .leftcontentbox p{
+    color: white;
+    font-size: 16px;
+    line-height: 25.6px;
+    font-family:'Roboto', sans-serif  ;
+    margin: 0 25px;
+    font-weight: 600;
+
+}
+.fifth_page .container2 .right{
+    width: 50%;
+    height: 100%;
+    /* background-color: rgb(148, 120, 173); */
+    display: flex;
+    flex-wrap: wrap;
+}
+.fifth_page .container2 .right .rightcontentbox{
+    width: 50%;
+    height: 260px;
+    background-color: orangered;
+}
+.fifth_page .container2 .right .rightcontentbox h4{
+    font-size: 24px;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    margin: 25px;
+}
+.fifth_page .container2 .right .rightcontentbox p{
+    color: white;
+    font-size: 16px;
+    line-height: 25.6px;
+    font-family:'Roboto', sans-serif  ;
+    margin: 0 25px;
+    font-weight: 600;
+
+}
+.fifth_page .container2 .right .image3 img{
+    border-radius: 50%;
+    margin-left: 100px;
+    margin-top: 50px;
+}
+.fifth_page .container2 .right .image4 img{
+    border-radius: 50%;
+    /* margin: 100px; */
+    margin-left: 170px;
+}
+.page6{
+    width: 100%;
+    height: 150vh;
+    position: relative;
+    
+}
+.page6 .bg-recshape{
+    width: 100%;
+    height: 300px;
+    background-color: ghostwhite;
+}
+.page6 .bg-recshape1{
+    width: 300px;
+    height: 800px;
+    background-color: orangered;
+    position: absolute;
+    top: 70px;
+    right: 100px;
+}
+.page6 .discussimage{
+    position: absolute;
+    right: 150px;
+    top: 135px;
+
+}
+.page6 .whitebox{
+    width: 585px;
+    height: 375px;
+    background-color: white;
+    position: absolute;
+    padding: 40px;
+    bottom: 40px;
+    left: 120px;
+}
+.page6 .whitebox h1{
+    font-size: 72px;
+    font-weight: 700;
+    line-height: 80px;
+    font-family: 'Oswald', sans-serif ;
+}
+.lastpage{
+    width: 100%;
+    height: 80vh;
+    background-color: orangered;
+    display: flex;
+}
+.lastpage .form{
+    margin: 100px 0 0 150px;
+}
+.lastpage .form input{
+    padding: 15px 280px 15px 10px;
+    font-size: 16px;
+    margin-bottom: 30px;
+    color: white;
+    background-color:orangered;
+    border-style: none;
+    border-radius: 2px;
+    border-bottom: 2px solid white;
+}
+::placeholder{
+    color: white;
+    opacity: 0.5;
+}
+.lastpage .form textarea{
+    padding-right: 250px;
+    color: white;
+    background-color:orangered;
+    border-style: none;
+    border-radius: 2px;
+    border-bottom: 2px solid white;
+    height: 130px;
+    margin-bottom: 30px;
+}
+.lastpage .form  button{
+    padding: 12px 55px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background-color: orangered;
+    border: 2px solid white;
+}
+.lastpage .form  button:hover{
+    background-color: white;
+    color: orangered;
+}
+.lastpage .contact h2{
+    font-size: 48px;
+    font-weight: 700;
+    font-family: 'Oswald', sans-serif ;
+    color: white;
+    line-height: 53px;
+    margin:80px 0 45px 100px ;
+
+}
+.lastpage .contact h6{
+    font-size: 30px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400px;
+    color: white;
+    line-height: 58px;
+    letter-spacing: 3px;
+    margin-left: 100px;
+    margin-top: 100px;
+}
+.lastpage .contact .icons{
+    margin-left:110px ;
+}
+.lastpage .contact .icons i{
+    margin-right: 20px;
+    color: white;
+}
+.footer{
+    width: 100%;
+    height: 250px;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+.footer p{
+    padding-top: 50px;
+    font-size: 14px;
+    font-family:'Roboto', sans-serif  ;
+    line-height: 1.6em;
+    letter-spacing: 1px;
+}
